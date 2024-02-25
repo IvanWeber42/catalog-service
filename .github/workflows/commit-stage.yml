@@ -30,6 +30,6 @@ jobs:
         with:
           sarif_file: ${{ steps.scan.outputs.sarif }}
       - name: Build, unit tests and integration tests
-          run: |
-            chmod +x mvnw
-            ./mvnw build
+        run: |
+          chmod +x mvnw
+          ./mvnw build
